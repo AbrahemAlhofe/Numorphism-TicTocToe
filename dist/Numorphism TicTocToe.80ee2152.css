@@ -1,0 +1,69 @@
+* {
+  font-family: monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #8c8c8c;
+}
+
+#result {
+  font-size: 21px;
+}
+
+#app {
+  display: flex;
+  width: 360px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
+  cursor: pointer;
+}
+.box.green, .box.blue {
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: inset 10px 10px 20px #d9d9d9, inset -10px -10px 20px #ffffff;
+}
+.box.green {
+  border-radius: 14px;
+  background: #80ff00;
+  box-shadow: inset 10px 10px 20px #6dd900, inset -10px -10px 20px #93ff00;
+}
+.box.blue {
+  border-radius: 14px;
+  background: #0080ff;
+  box-shadow: inset 10px 10px 20px #006dd9, inset -10px -10px 20px #0093ff;
+}
+
+#reset {
+  border-radius: 13px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
+  border: none;
+  margin-top: 1em;
+  outline: none;
+  width: 60px;
+  cursor: pointer;
+  height: 40px;
+}
+#reset:active {
+  border-radius: 11px;
+  background: #ffffff;
+  box-shadow: inset 6px 6px 12px #d9d9d9, inset -6px -6px 12px #ffffff;
+}
+
+/*# sourceMappingURL=/Numorphism%20TicTocToe.80ee2152.css.map */

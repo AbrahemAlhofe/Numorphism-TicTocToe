@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link( rel='stylesheet' href='./index.scss' )
+    body
+        h1 Numorphism TicTocToe
+        div#app
+            each row in [0, 1, 2]
+                each col in [0, 1, 2]
+                    div( class='box' data-col=col data-row=row )
+
+        div#result
+        button#reset Reset
+        script( src='./index.ts' )

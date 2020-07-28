@@ -1,0 +1,17 @@
+{
+  "name": "Numorphism_TicTocToe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "abrahem ali alhofe",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel serve index.pug"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "pug": "^3.0.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "sass": "^1.26.10",
+    "typescript": "^3.9.7"
+  }
+}
