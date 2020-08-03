@@ -5,7 +5,7 @@
   "author": "abrahem ali alhofe",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel serve index.pug"
+    "dev": "parcel serve ./src/index.pug -d ./"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
