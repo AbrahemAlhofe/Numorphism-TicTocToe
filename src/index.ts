@@ -84,8 +84,6 @@ tictoc.listen(() => {
 
     displayMatrix(tictoc.Matrix);
 
-    console.log(isFinished(tictoc.Matrix));
-
     if ( isFinished(tictoc.Matrix) ) {
         result.innerText = `${ ( tictoc.currentPlayer === Players.GREEN ) ? 'blue' : 'green' } player is winner`
     }

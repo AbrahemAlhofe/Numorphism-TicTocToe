@@ -25,7 +25,7 @@ function getAcrossRight(arr: Matrix< number >) {
 }
 
 function getColumn(arr: Matrix< number >, col: number) {
-    return arr.map((row) => row[col - 1]);
+    return arr.map((row) => row[col]);
 }
 
 
@@ -39,7 +39,6 @@ export function displayMatrix (matrix: Matrix< number >) {
     result += `[ ${matrix[0].join(", ")} ]`;
     result += `\n[ ${matrix[1].join(", ")} ]`;
     result += `\n[ ${matrix[2].join(", ")} ]`;
-    console.log(result);
 }
 
 export function sum(arr: number[]): number {

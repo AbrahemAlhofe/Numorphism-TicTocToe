@@ -143,7 +143,7 @@ function getAcrossRight(arr) {
 
 function getColumn(arr, col) {
   return arr.map(function (row) {
-    return row[col - 1];
+    return row[col];
   });
 }
 
@@ -159,7 +159,6 @@ function displayMatrix(matrix) {
   result += "[ " + matrix[0].join(", ") + " ]";
   result += "\n[ " + matrix[1].join(", ") + " ]";
   result += "\n[ " + matrix[2].join(", ") + " ]";
-  console.log(result);
 }
 
 exports.displayMatrix = displayMatrix;
@@ -434,7 +433,6 @@ var result = document.getElementById('result');
 var reset = document.getElementById('reset');
 tictoc.listen(function () {
   utils_1.displayMatrix(tictoc.Matrix);
-  console.log(utils_1.isFinished(tictoc.Matrix));
 
   if (utils_1.isFinished(tictoc.Matrix)) {
     result.innerText = (tictoc.currentPlayer === utils_1.Players.GREEN ? 'blue' : 'green') + " player is winner";
@@ -474,7 +472,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57617" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63953" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
